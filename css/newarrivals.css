@@ -1,0 +1,20 @@
+@charset "utf-8";
+
+
+/* 퀵메뉴 */
+.quick-menu {
+  background: #ffffff;
+  padding: 12px 8px;
+}
+.quick-menu-list {
+  display: flex;
+  justify-content: space-around;
+}
+
+.quick-menu-list li {
+  width: 65px;
+}
+
+.quick-menu-list img {
+  width: 100%;
+}

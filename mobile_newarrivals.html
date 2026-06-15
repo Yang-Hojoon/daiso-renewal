@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/common.css">
+    <link rel="stylesheet" href="css/newarrivals.css">
+</head>
+
+<body>
+  <div class="app-container">
+
+    <header class="header">
+
+      <!-- 로고 + 버튼 줄 (항상 고정) -->
+      <div class="header-top">
+        <h1 class="logo">
+          <a href="mobile_home.html"><img src="img/Daiso logo.png" alt="다이소 로고"></a>
+        </h1>
+        <button class="mode-toggle" aria-label="모드 전환">
+          <a href="mobile_store-FindProductLocation.html"><img src="img/Shopping and Store Toggle Button.png" alt="쇼핑 모드"></a>
+        </button>
+        <button class="alarm-btn" aria-label="알림">
+          <a href="mobile_notificationspageno.html"><img src="img/No Notifications.png" alt="알림 없음"></a>
+        </button>
+      </div>
+
+      <!-- 검색창 + 카테고리 (스크롤 내리면 숨겨지는 영역) -->
+      <div class="header-bottom">
+        <section class="search-section">
+          <div class="search-box">
+            <input type="search" placeholder="고객님, 브러쉬 찾으세요?" class="search-input">
+            <button type="button" class="camera-btn" aria-label="카메라 검색">
+              <a href="side_CameraSearch.html">
+              <img src="img/Camera Search.png" alt="카메라">
+              </a>
+            </button>
+          </div>
+        </section>
+
+        <nav class="home-category" aria-label="홈 카테고리">
+          <ul class="home-category-list">
+            <li><a href="mobile_theme.html"><img src="img/Theme_Suggestions.png" alt="테마추천"></a></li>
+            <li><a href="mobile_home.html"><img src="img/Home.png" alt="홈"></a></li>
+            <li><a href="mobile_newarrivals.html"><img src="img/New_Arrivals(b).png" alt="신상"></a></li>
+            <li><a href="mobile_ranking.html"><img src="img/Ranking.png" alt="랭킹"></a></li>
+            <li><a href="mobile_specialpromotion.html"><img src="img/Special_Promotion.png" alt="기획전"></a></li>
+          </ul>
+        </nav>
+      </div>
+
+    </header>
+
+    <main>
+
+      <section class="quick-menu" aria-label="바로가기 메뉴">
+        <ul class="quick-menu-list">
+          <li><a href="#"><img src="img/ALL.png" alt="전체"></a></li>
+          <li><a href="#"><img src="img/Beauty,Hygiene.png" alt="뷰티/위생"></a></li>
+          <li><a href="#"><img src="img/kitchenware.png" alt="주방용품"></a></li>
+          <li><a href="#"><img src="img/Cleaning, Bathroom.png" alt="청소/욕실"></a></li>
+          <li><a href="#"><img src="img/Storage, Organization.png" alt="수납/정리"></a></li>
+          <!--
+          <li><a href="#"><img src="img/Stationery, Fancy Goods.png" alt="문구/펜시"></a></li>
+          -->
+        </ul>
+      </section>
+      
+      <div class="Ad">
+        <ul>
+          <li><a href="#"><img src="img/New Arrivals (All Products).png" alt="랭킹 전체 상품"></a></li>
+        </ul>
+      </div>
+
+    </main>
+
+    <footer class="app-footer">
+      <div class="footer-logout">
+        <a href="#">로그아웃</a>
+      </div>
+      <div class="footer-content">
+        <div class="footer-section">
+          <h3><img src="img/Phone.png" class="footer-icon"> 온라인 다이소몰</h3>
+          <p>평일 09:00 ~ 18:00</p>
+          <ul>
+            <li><a href="#">1:1 문의</a></li>
+            <li><a href="#">공지사항</a></li>
+            <li><a href="#">앱 장애/신고</a></li>
+            <li><a href="#">고객센터</a></li>
+          </ul>
+        </div>
+        <div class="footer-divider"></div>
+        <div class="footer-section">
+          <h3><img src="img/Phone.png" class="footer-icon"> 다이소 매장</h3>
+          <p>평일 09:00 ~ 18:00</p>
+          <ul>
+            <li><a href="#">1:1 문의</a></li>
+            <li><a href="#">고객센터</a></li>
+            <li><a href="#">제휴문의</a></li>
+          </ul>
+        </div>
+      </div>
+    </footer>
+
+    <nav class="bottom-nav">
+      <ul class="bottom-nav-list">
+        <li><a href="mobile_home.html"><img src="img/Home nv(b).png" alt="홈"></a></li>
+        <li><a href="mobile_nav-category.html"><img src="img/Category nv.png" alt="카테고리"></a></li>
+        <li><a href="mobile_nav-discovery.html"><img src="img/Discovery nv.png" alt="발견"></a></li>
+        <li><a href="mobile_nav-my.html"><img src="img/my nv.png" alt="마이"></a></li>
+        <li><a href="mobile_nav-shoppingcart.html"><img src="img/Shopping Cart nv.png" alt="장바구니"></a></li>
+      </ul>
+    </nav>
+
+  </div>
+
+  <script src="js/mobile.js"></script>
+</body>
+</html>

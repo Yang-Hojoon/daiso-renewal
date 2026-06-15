@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/common.css">
+    <link rel="stylesheet" href="css/home.css">
+</head>
+
+<body>
+  <div class="app-container">
+
+    <header class="header">
+
+      <!-- 로고 + 버튼 줄 (항상 고정) -->
+      <div class="header-top">
+        <h1 class="logo">
+          <a href="mobile_home.html"><img src="img/Daiso logo.png" alt="다이소 로고"></a>
+        </h1>
+        <button class="mode-toggle" aria-label="모드 전환">
+          <a href="mobile_store-FindProductLocation.html"><img src="img/Shopping and Store Toggle Button.png" alt="쇼핑 모드"></a>
+        </button>
+        <button class="alarm-btn" aria-label="알림">
+          <a href="mobile_notificationspage.html"><img src="img/Notifications.png" alt="알림 있음"></a>
+        </button>
+      </div>
+
+      <!-- 검색창 + 카테고리 (스크롤 내리면 숨겨지는 영역) -->
+      <div class="header-bottom">
+        <section class="search-section">
+          <div class="search-box">
+            <input type="search" placeholder="고객님, 브러쉬 찾으세요?" class="search-input">
+            <button type="button" class="camera-btn" aria-label="카메라 검색">
+              <a href="side_CameraSearch.html">
+              <img src="img/Camera Search.png" alt="카메라">
+              </a>
+            </button>
+          </div>
+        </section>
+
+        <nav class="home-category" aria-label="홈 카테고리">
+          <ul class="home-category-list">
+            <li><a href="mobile_theme.html"><img src="img/Theme_Suggestions.png" alt="테마추천"></a></li>
+            <li><a href="mobile_home.html"><img src="img/Home(b).png" alt="홈"></a></li>
+            <li><a href="mobile_newarrivals.html"><img src="img/New_Arrivals.png" alt="신상"></a></li>
+            <li><a href="mobile_ranking.html"><img src="img/Ranking.png" alt="랭킹"></a></li>
+            <li><a href="mobile_specialpromotion.html"><img src="img/Special_Promotion.png" alt="기획전"></a></li>
+          </ul>
+        </nav>
+      </div>
+
+    </header>
+
+    <main>
+
+      <section class="main-banner" aria-label="메인 배너">
+        <div class="banner-slide">
+          <ul>
+            <li><a href="#"><img src="img/Ad Banner1.png" alt="국민득템 가성비 UP 배너"></a></li>
+            <li><a href="#"><img src="img/Ad Banner2.png" alt="놀라운 가격 천원의 행복"></a></li>
+            <li><a href="#"><img src="img/Ad Banner3.png" alt="복 받는 설날 명절 감사 용품"></a></li>
+            <li><a href="#"><img src="img/Ad Banner4.png" alt="포스트잇 신상 출시 선물 이벤트"></a></li>
+            <li><a href="#"><img src="img/Ad Banner5.png" alt="다이소 신상"></a></li>
+          </ul>
+
+          <div class="banner-controls">
+            <button class="prev">
+              <img src="img/left-arrow.png" alt="이전">
+            </button>
+            <span class="divider"></span>
+            <button class="next">
+              <img src="img/right-arrow.png" alt="다음">
+            </button>
+          </div>
+
+        </div>
+      </section>
+
+      <section class="quick-menu" aria-label="바로가기 메뉴">
+        <ul class="quick-menu-list">
+          <li><a href="#"><img src="img/Household Theme.png" alt="살림득템전"></a></li>
+          <li><a href="#"><img src="img/Available for Pickup.png" alt="픽업가능"></a></li>
+          <li><a href="#"><img src="img/Delivery Available.png" alt="배달가능"></a></li>
+          <li><a href="#"><img src="img/Arrives Today.png" alt="오늘도착"></a></li>
+          <li><a href="#"><img src="img/Event.png" alt="이벤트"></a></li>
+          <!--
+          <li><a href="#"><img src="img/Open Run.png" alt="오픈런"></a></li>
+          -->
+        </ul>
+      </section>
+
+      <section class="product-section" aria-labelledby="pick-title">
+        <img src="img/Divider Bar.png" alt="구분 배너" class="section-banner">
+        <header class="section-header">
+          <h2 id="pick-title">내 취향 Pick!</h2>
+          <button type="button" class="more-button">
+            <img src="img/View All.png" alt="전체보기">
+          </button>
+        </header>
+        <ul class="product-list">
+          <li><article class="product-card"><a href="#"><img src="img/Hershey's Chocolate Chip Mini Cookies 50 g.png" alt="허쉬 초콜릿 칩 미니 쿠키"></a></article></li>
+          <li><article class="product-card"><a href="#"><img src="img/Mini Choco Loops Cookie 40 g.png" alt="미니 초코룹스 쿠키"></a></article></li>
+          <li><article class="product-card"><a href="#"><img src="img/Haetae Confectionery Pocky Family Pack (Extra Thin) 141 g.png" alt="해태 포키 패밀리팩"></a></article></li>
+          <li><article class="product-card"><a href="#"><img src="img/Hershey's Chocolate Almond Glutinous Rice Cake Pie 85 g.png" alt="허쉬 초코 아몬드 찰떡 파이"></a></article></li>
+          <li><article class="product-card"><a href="#"><img src="img/Madeca21 TECA Solution Soothing Mist Toner 200 ml.png" alt="마데카21 테카 솔류션 수딩 미스트 토너"></a></article></li>
+          <li><article class="product-card"><a href="#"><img src="img/VT Cosmetics PDRN Radiance Cream 50 ml.png" alt="VT PDRN 광채크림"></a></article></li>
+          <!--
+          <li><article class="product-card"><a href="#"><img src="img/FATION Nosca9 First Step Blemish Ampoule 30 ml.png" alt="파티온 노스카나인 퍼스트스텝 흔적앰플"></a></article></li>
+          <li><article class="product-card"><a href="#"><img src="img/Air Cushion Puff (2P).png" alt="밀착쿠션에어퍼프"></a></article></li>
+          -->
+        </ul>
+      </section>
+
+      <section class="product-section" aria-labelledby="hot-title">
+        <img src="img/Divider Bar.png" alt="구분 배너" class="section-banner">
+        <header class="section-header">
+          <h2 id="hot-title">요즘 쓰기 딱!</h2>
+          <button type="button" class="more-button">
+            <img src="img/View All.png" alt="전체보기">
+          </button>
+        </header>
+        <ul class="product-list">
+          <li><article class="product-card"><a href="#"><img src="img/Color Hand Warmer Heat Pack (Standard Type, 2 Pieces).png" alt="손날로 컬러 핫팩"></a></article></li>
+          <li><article class="product-card"><a href="#"><img src="img/Waffle Heat Pack (2 Pieces).png" alt="와플 핫팩"></a></article></li>
+          <li><article class="product-card"><a href="#"><img src="img/[Unisex] Fluffy Long-Sleeve Fleece Half-Zip – S Milk Brown.png" alt="공용 플러피 긴팔 플리스 반집업"></a></article></li>
+          <!--
+          <li><article class="product-card"><a href="#"><img src="img/Fluffy Fleece Zip-Up Vest – L Navy.png" alt="플러피 조끼 플리스 집업"></a></article></li>
+          -->
+        </ul>
+      </section>
+
+      <section class="product-section" aria-labelledby="ranking-title">
+        <img src="img/Divider Bar.png" alt="구분 배너" class="section-banner">
+        <header class="section-header">
+          <h2 id="ranking-title">지금 뜨는 상품</h2>
+          <h3 id="ranking-subtitle">24시간 동안 가장 많이 판매됐어요</h3>
+          <div class="rank-buttons" role="group" aria-label="상품 순위 선택">
+            <button type="button" class="rank-btn" aria-pressed="true">
+              <img src="img/1st–5th Place.png" alt="1위~5위">
+            </button>
+            <button type="button" class="rank-btn" aria-pressed="false">
+              <img src="img/6st–10th Place.png" alt="6위~10위">
+            </button>
+            <button type="button" class="rank-btn" aria-pressed="false">
+              <img src="img/11st–15th Place.png" alt="11위~15위">
+            </button>
+            <button type="button" class="rank-btn" aria-pressed="false">
+              <img src="img/16st–20th Place.png" alt="16위~20위">
+            </button>
+          </div>
+        </header>
+        <ul class="ranking-list">
+          <li><article class="product-card"><a href="#"><img src="img/1st Place.png" alt="1위 상품"></a></article></li>
+          <li><article class="product-card"><a href="#"><img src="img/2nd Place.png" alt="2위 상품"></a></article></li>
+          <li><article class="product-card"><a href="#"><img src="img/3rd Place.png" alt="3위 상품"></a></article></li>
+          <li><article class="product-card"><a href="#"><img src="img/4th Place.png" alt="4위 상품"></a></article></li>
+          <li><article class="product-card"><a href="#"><img src="img/5th Place.png" alt="5위 상품"></a></article></li>
+        </ul>
+      </section>
+
+      <section class="product-section" aria-labelledby="reorder-title">
+        <img src="img/Divider Bar.png" alt="구분 배너" class="section-banner">
+        <header class="section-header">
+          <h2 id="reorder-title">다시 구매하기</h2>
+          <button type="button" class="more-button">
+            <img src="img/View All.png" alt="전체보기">
+          </button>
+        </header>
+        <ul class="product-list">
+          <li><article class="product-card"><a href="#"><img src="img/Color Hand Warmer Heat Pack (Standard Type, 2 Pieces).png" alt="손날로 컬러 핫팩"></a></article></li>
+          <li><article class="product-card"><a href="#"><img src="img/Waffle Heat Pack (2 Pieces).png" alt="와플 핫팩"></a></article></li>
+          <li><article class="product-card"><a href="#"><img src="img/Measuring Cup Lid Grain Storage Container 1.2 L.png" alt="계량컵 뚜껑 잡곡 용기"></a></article></li>
+          <!--
+          <li><article class="product-card"><a href="#"><img src="img/Flexible Soft-Fit Storage Container 600 ml – Gray.png" alt="휘어지는 말랑핏 저장 용기"></a></article></li>
+          -->
+        </ul>
+      </section>
+
+      <section class="product-section" aria-labelledby="cost-effective">
+        <img src="img/Divider Bar.png" alt="구분 배너" class="section-banner">
+        <header class="section-header">
+          <h2 id="cost-effective">압도적 가성비 국민득템UP</h2>
+          <button type="button" class="more-button">
+            <img src="img/View All.png" alt="전체보기">
+          </button>
+        </header>
+        <ul class="product-list">
+          <li><article class="product-card"><a href="#"><img src="img/Bathroom Cleaning Sponge (10 Pieces).png" alt="욕실 청소 스펀지"></a></article></li>
+          <li><article class="product-card"><a href="#"><img src="img/Ethanol Cleaning Wipes (50 Sheets).png" alt="에탄올 청소포"></a></article></li>
+          <li><article class="product-card"><a href="#"><img src="img/Dong-A Pharmaceutical SSAC Stick.png" alt="동아 싹스틱"></a></article></li>
+          <!--
+          <li><article class="product-card"><a href="#"><img src="img/Let's Clean Heavy-Duty Large Cleaning Wipes (25 Sheets, 20 × 37 cm).png" alt="렛츠 클린 고중량 대형"></a></article></li>
+          -->
+          <li><article class="product-card"><a href="#"><img src="img/Diagonal Roll Cleaner Refill 10 cm (2 Pieces).png" alt="사선형 롤클리너 리필"></a></article></li>
+          <li><article class="product-card"><a href="#"><img src="img/Let’s Clean Kitchen Dish Cloth Tissues 120 Sheets – Cap Type.png" alt="렛츠 클린 주방 행주 티슈"></a></article></li>
+          <li><article class="product-card"><a href="#"><img src="img/Compressed Mist Sprayer 200 ml.png" alt="압축식 안개 분무기"></a></article></li>
+          <!--
+          <li><article class="product-card"><a href="#"><img src="img/Wooden Stick Round Cotton Swabs (1,000 Pieces).png" alt="나무 스틱 둥근 면봉"></a></article></li>
+          -->
+        </ul>
+      </section>
+
+      <section class="product-section" aria-labelledby="daily-1000">
+        <img src="img/Divider Bar.png" alt="구분 배너" class="section-banner">
+        <header class="section-header">
+          <h2 id="daily-1000">생활용품 1,000원</h2>
+          <button type="button" class="more-button">
+            <img src="img/View All.png" alt="전체보기">
+          </button>
+        </header>
+        <ul class="product-list">
+          <li><article class="product-card"><a href="#"><img src="img/Living Pull-Out Kitchen Towels (150 Sheets).png" alt="리빙 뽑아쓰는 키친타월"></a></article></li>
+          <li><article class="product-card"><a href="#"><img src="img/Baking Soda Hand Mop Cleaning Wipes (100 Sheets).png" alt="베이킹소다 손걸레 청소용 티슈"></a></article></li>
+          <li><article class="product-card"><a href="#"><img src="img/Corn Fiber Mesh Scrubber.png" alt="옥수수 망사 수세미"></a></article></li>
+          <!--
+          <li><article class="product-card"><a href="#"><img src="img/Vacuum Container Pump.png" alt="진공 용기 압축기"></a></article></li>
+          -->
+          <li><article class="product-card"><a href="#"><img src="img/Drawstring Plastic Bag – Large.png" alt="조임끈 비닐백 대형"></a></article></li>
+          <li><article class="product-card"><a href="#"><img src="img/Integrated Rectangular Storage Box 26 × 10 × 9 cm.png" alt="일체형 직사각 보관함"></a></article></li>
+          <li><article class="product-card"><a href="#"><img src="img/Donggubat Easy Effervescent Tumbler Cleaner 4 g (10 Pieces).png" alt="동구밭 더 간편한 발포 텀블러 세척제"></a></article></li>
+          <!--
+          <li><article class="product-card"><a href="#"><img src="img/Pull-Out Kitchen Towels (150 Sheets).png" alt="뽑아쓰는 키친타월"></a></article></li>
+          -->
+        </ul>
+      </section>
+
+    </main>
+
+    <footer class="app-footer">
+      <div class="footer-logout">
+        <a href="#">로그아웃</a>
+      </div>
+      <div class="footer-content">
+        <div class="footer-section">
+          <h3><img src="img/Phone.png" class="footer-icon"> 온라인 다이소몰</h3>
+          <p>평일 09:00 ~ 18:00</p>
+          <ul>
+            <li><a href="#">1:1 문의</a></li>
+            <li><a href="#">공지사항</a></li>
+            <li><a href="#">앱 장애/신고</a></li>
+            <li><a href="#">고객센터</a></li>
+          </ul>
+        </div>
+        <div class="footer-divider"></div>
+        <div class="footer-section">
+          <h3><img src="img/Phone.png" class="footer-icon"> 다이소 매장</h3>
+          <p>평일 09:00 ~ 18:00</p>
+          <ul>
+            <li><a href="#">1:1 문의</a></li>
+            <li><a href="#">고객센터</a></li>
+            <li><a href="#">제휴문의</a></li>
+          </ul>
+        </div>
+      </div>
+    </footer>
+
+    <nav class="bottom-nav">
+      <ul class="bottom-nav-list">
+        <li><a href="mobile_home.html"><img src="img/Home nv(b).png" alt="홈"></a></li>
+        <li><a href="mobile_nav-category.html"><img src="img/Category nv.png" alt="카테고리"></a></li>
+        <li><a href="mobile_nav-discovery.html"><img src="img/Discovery nv.png" alt="발견"></a></li>
+        <li><a href="mobile_nav-my.html"><img src="img/my nv.png" alt="마이"></a></li>
+        <li><a href="mobile_nav-shoppingcart.html"><img src="img/Shopping Cart nv.png" alt="장바구니"></a></li>
+      </ul>
+    </nav>
+
+  </div>
+
+  <script src="js/mobile.js"></script>
+</body>
+</html>

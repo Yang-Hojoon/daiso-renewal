@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/store-common.css">
+    <link rel="stylesheet" href="css/nav-my.css">
+</head>
+
+<body>
+  <div class="app-container">
+
+    <header class="header">
+
+      <!-- 로고 + 버튼 줄 (항상 고정) -->
+      <div class="header-top">
+        <h1 class="logo">
+          <a onclick="history.back()" class="back-btn">
+            <img class="back-icon" src="img/back(black).png" alt="뒤로가기">
+          </a>
+        </h1>
+        <button class="mypagetext" aria-label="마이페이지">
+          <a href="mobile_nav-my.html"><img src="img/mypage text.png" alt="마이페이지"></a>
+        </button>
+        <button class="alarm-btn" aria-label="알림">
+          <a href="mobile_notificationspageno.html"><img src="img/No Notifications.png" alt="알림 없음"></a>
+        </button>
+      </div>
+    </header>
+
+    <main>
+
+      <section class="mypage" aria-label="마이페이지 내용">
+        <img src="img/my.png">
+      </section>
+
+    </main>
+
+    <footer class="app-footer">
+      <div class="footer-logout">
+        <a href="#">로그아웃</a>
+      </div>
+      <div class="footer-content">
+        <div class="footer-section">
+          <h3><img src="img/Phone.png" class="footer-icon"> 온라인 다이소몰</h3>
+          <p>평일 09:00 ~ 18:00</p>
+          <ul>
+            <li><a href="#">1:1 문의</a></li>
+            <li><a href="#">공지사항</a></li>
+            <li><a href="#">앱 장애/신고</a></li>
+            <li><a href="#">고객센터</a></li>
+          </ul>
+        </div>
+        <div class="footer-divider"></div>
+        <div class="footer-section">
+          <h3><img src="img/Phone.png" class="footer-icon"> 다이소 매장</h3>
+          <p>평일 09:00 ~ 18:00</p>
+          <ul>
+            <li><a href="#">1:1 문의</a></li>
+            <li><a href="#">고객센터</a></li>
+            <li><a href="#">제휴문의</a></li>
+          </ul>
+        </div>
+      </div>
+    </footer>
+
+    <nav class="bottom-nav">
+      <ul class="bottom-nav-list">
+        <li><a href="mobile_home.html"><img src="img/Home nv.png" alt="홈"></a></li>
+        <li><a href="mobile_nav-category.html"><img src="img/Category nv.png" alt="카테고리"></a></li>
+        <li><a href="mobile_nav-discovery.html"><img src="img/Discovery nv.png" alt="발견"></a></li>
+        <li><a href="mobile_nav-my.html"><img src="img/my nv(b).png" alt="마이"></a></li>
+        <li><a href="mobile_nav-shoppingcart.html"><img src="img/Shopping Cart nv.png" alt="장바구니"></a></li>
+      </ul>
+    </nav>
+
+  </div>
+
+
+  <script src="js/mobile.js"></script>
+</body>
+</html>

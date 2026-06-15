@@ -1,0 +1,98 @@
+@charset "utf-8";
+
+@font-face {
+  font-family: "NotoSans";
+  src: url("../fonts/NotoSans-Medium.ttf") format("truetype");
+  src: url("../fonts/NotoSans-Light.ttf") format("truetype");
+}
+
+*,*:after,*:before {box-sizing: border-box;margin: 0;padding: 0;}
+
+body{font-family: "NotoSans", sans-serif;background:#ffffff;}
+#Favicon{margin-bottom:20px;}
+#Favicon img{width:50px;}
+#mbox{display:grid;grid-template-columns: 52% 48%;width:100%;margin:0 auto;min-height:100vh;}
+
+.left{margin-top: 30pt;background:#ffffff;margin-left: 70px;margin-right: 50px;}
+
+.A h1{font-size:clamp(20px, 3vw, 40px);margin-bottom:15px;font-weight: 400;}
+.A h2{font-size:clamp(13px, 1.5vw, 20px);font-weight:400;color:#555;line-height:1.6;margin-bottom:45px;}
+
+.B h1{font-size:clamp(15px, 1.7vw, 22px);margin-bottom:15px;font-weight: 500;}
+.B h2{font-size:clamp(11px, 1.1vw, 15px);font-weight:400;line-height:1.7;color:#444;margin-bottom:45px;}
+
+.C{display:grid;grid-template-columns: 1fr 1fr;}
+.C h1{font-size:clamp(15px, 1.7vw, 22px);margin-bottom:20px;grid-column:1 / -1;font-weight: 600;}
+
+.style-guide-color{display:grid;grid-template-columns:repeat(3, auto);gap:15px;margin-bottom:45px;}
+.style-guide-color img{width:clamp(35px, 4.5vw, 60px);height:auto;}
+.style-guide-color .sub-title{grid-column:1 / -1;}
+.style-guide-font{display:flex;flex-direction:column;gap:10px;margin-bottom:60px;font-weight: 350;}
+
+.sub-title{font-weight:600;margin-right:10px;}
+
+.D h1{font-size:clamp(15px, 1.7vw, 22px);margin-bottom:20px;font-weight: 600;}
+
+.skill{display:flex;justify-content:space-between;margin-right: 50px;align-items:center;}
+.skill img{width:clamp(40px, 6vw, 80px);}
+
+/* ===== right 영역 ===== */
+.right{
+  position: relative;
+  display: grid;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+}
+
+.img{position:absolute;top:0;left:0;width:100%;height:100%;z-index:0;}
+.img img{width:100%;height:100%;object-fit:cover;}
+.img-filter{position:absolute;top:0;left:0;width:100%;height:100%;z-index:1;}
+.img-filter img{width:100%;height:100%;object-fit:cover;}
+
+/* ===== 디바이스 목업 - vw 기반 반응형 ===== */
+.device {
+  position: relative;
+  /* 브라우저 너비 48% 안에서 기기 폭을 25vw로, 최소 220px 최대 360px */
+  width: clamp(220px, 25vw, 360px);
+  /* 폰 비율 약 9:19.5 → width * 2.17 */
+  height: calc(clamp(220px, 25vw, 360px) * 2.17);
+  border: clamp(5px, 0.7vw, 10px) solid #2f2f2f;
+  border-radius: clamp(35px, 5vw, 70px);
+  overflow: hidden;
+  background: linear-gradient(
+    145deg,
+    #2a2a2a 0%,
+    #1a1a1a 40%,
+    #111 70%,
+    #000 100%
+  );
+  z-index: 5;
+}
+
+/* iframe: transform은 JS(scaleIframe)에서 동적으로 처리 */
+.device iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  border: none;
+  border-radius: clamp(28px, 4.3vw, 60px);
+  z-index: 1;
+  width: 390px;
+  height: 872px;
+  transform-origin: top left;
+  /* transform은 JS에서 주입 */
+}
+
+.device::before {
+  content: "";
+  position: absolute;
+  top: clamp(6px, 0.8vw, 12px);
+  left: 50%;
+  transform: translateX(-50%);
+  width: clamp(60px, 8vw, 110px);
+  height: clamp(18px, 2.3vw, 35px);
+  background: #000;
+  border-radius: 50px;
+  z-index: 10;
+}

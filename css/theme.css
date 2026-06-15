@@ -1,0 +1,21 @@
+@charset "utf-8";
+@font-face {
+  font-family: "NotoSans";
+  src: url("../fonts/NotoSans-Medium.ttf") format("truetype");
+}
+
+.Ad ul li:nth-child(1) img {
+  margin-top: 10px;
+}
+
+.Ad ul li:nth-child(2) img {
+  height: 50px;
+}
+
+.Ad ul li:nth-child(4) img {
+  width: 300px; height: auto; margin: auto; margin-top: 40px;margin-bottom: 70px;
+}
+
+.Ad ul li:nth-child(6) img {
+  width: 290px; height: auto; margin: auto; margin-top: 20px; margin-bottom: 25px;
+}

@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DAISO RENEWAL PROJECT</title>
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/mdev.css">
+</head>
+<body>
+
+<div id="mbox">
+  <div class="left">
+    <div id="Favicon">
+      <img src="img/Favicon.png" alt="파비콘">
+    </div>
+    <div class="A">
+      <h1>프로젝트명 : DAISO RENEWAL PROJECT</h1>
+      <h2>개인 모바일웹 프로젝트 작업(진행중)<br>프로젝트 진행자 : 양호준</h2>
+    </div>
+    <div class="B">
+      <h1>기획의도</h1>
+      <h2>
+        다이소 웹사이트를 모바일 중심의 사용자 환경에 맞게 개선하기 위해 리뉴얼 프로젝트를 진행했습니다.<br>기존 사이트의 복잡한 정보 구조를 정리하고 사용자 동선을 단순화하여 원하는 상품과 정보를 빠르게 찾을 수 있도록 UI/UX를 재설계했습니다.<br>또한 가독성과 접근성을 고려한 디자인을 적용하여 보다 직관적이고 편리한 모바일 사용자 경험을 제공하는 것을 목표로 하였습니다.</h2>   
+    </div>
+    <div class="C">
+      <h1>STYLE GUIDE</h1>
+      <ul class="style-guide-color">
+        <li class="sub-title">COLOR</li>
+        <li><img src="img/ffffff.png" alt="#ffffff"></li>
+        <li><img src="img/cfcfcf.png" alt="#cfcfcf"></li>
+        <li><img src="img/747474.png" alt="#747474"></li>
+        <li><img src="img/535353.png" alt="#747474"></li>
+        <li><img src="img/2a2a2a.png" alt="#2a2a2a"></li>
+        <li><img src="img/ddd.png" alt="#ddd"></li>
+      </ul>
+      <ul class="style-guide-font">
+        <li class="sub-title">FONT</li>
+        <li>NotoSans-Medium</li>
+        <li>천원의 즐거움을 담은 모바일 쇼핑 경험</li>
+      </ul>
+    </div>
+    <div class="D">
+      <h1>SKILL</h1>
+      <ul class="skill">
+        <li><img src="img/html5-icon.png" alt="html5 아이콘"></li>
+        <li><img src="img/css3-icon.png" alt="css3 아이콘"></li>
+        <li><img src="img/ps-icon.png" alt="ps 아이콘"></li>
+        <li><img src="img/ai-icon.png" alt="ai 아이콘"></li>
+        <li><img src="img/figma-icon.png" alt="figma 아이콘"></li>
+      </ul>
+    </div>
+  </div>
+  <div class="right">
+    <div class="img">
+      <img src="img/background-image.png" alt="배경">
+    </div>
+    <div class="img-filter">
+      <img src="img/box.png" alt="필터">
+    </div>
+    <div class="device">
+      <iframe id="device-iframe" src="mobile_home.html"></iframe>
+    </div>
+  </div>
+</div>
+
+<script>
+  function scaleIframe() {
+    const device = document.querySelector('.device');
+    const iframe = document.getElementById('device-iframe');
+    if (!device || !iframe) return;
+
+    /* border 제외한 안쪽 너비 */
+    const style = getComputedStyle(device);
+    const borderLeft  = parseFloat(style.borderLeftWidth)  || 0;
+    const borderRight = parseFloat(style.borderRightWidth) || 0;
+    const innerWidth  = device.offsetWidth - borderLeft - borderRight;
+
+    const scale = innerWidth / 390;  /* 390 = iframe 원본 너비 */
+    iframe.style.transform = `scale(${scale})`;
+  }
+
+  /* DOMContentLoaded → layout 완료 후 실행 */
+  document.addEventListener('DOMContentLoaded', scaleIframe);
+  /* 혹시 이미지 로딩 후 레이아웃이 바뀔 경우 대비 */
+  window.addEventListener('load', scaleIframe);
+  /* 창 크기 바뀔 때마다 재계산 */
+  window.addEventListener('resize', scaleIframe);
+</script>
+
+</body>
+</html>

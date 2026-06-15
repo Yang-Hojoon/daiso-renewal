@@ -1,0 +1,57 @@
+@charset "utf-8";
+@font-face {
+  font-family: "NotoSans";
+  src: url("../fonts/NotoSans-Medium.ttf") format("truetype");
+}
+
+/* 뒤로가기 버튼 위치 */
+.back-btn {
+  position: absolute; /* fixed → absolute 로 변경 */
+  top: 28%;
+  left: 5%;
+}
+
+/* 뒤로가기 버튼 크기 */
+.back-icon {
+  width: 24px !important;
+  height: auto !important;
+}
+
+/* mypagetext 버튼 - 크기 줄이고 왼쪽으로 이동 */
+.Shoppingcarttext {
+  position: absolute;
+  top: 35%;
+  left: 14%;        /* 뒤로가기 버튼 바로 옆 */
+  background: none;
+  border: none;
+  padding: 0;
+}
+
+.Shoppingcarttext img {
+  width: 70px !important;
+  height: auto !important;
+}
+
+
+.mypage {
+  margin-top: -65px;
+}
+
+.mypage img {
+  width: 100%;
+  display: block;
+}
+
+.Search-btn {
+  position: absolute;
+  top: 15%;
+  right: 4%;
+  background: none;
+  border: none;
+  padding: 0;
+}
+
+.Search-btn img {
+  width: 27px !important;   /* 원하는 크기로 조절 */
+  height: auto !important;
+}

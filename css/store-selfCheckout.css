@@ -1,0 +1,64 @@
+@charset "utf-8";
+@font-face {
+  font-family: "NotoSans";
+  src: url("../fonts/NotoSans-Medium.ttf") format("truetype");
+}
+
+main {
+  padding-top: 150px;
+}
+
+.store-category {
+    padding-top: 20px;
+}
+
+
+
+.checkout-info {
+  position: relative;/
+}
+
+.qr-code {
+  position: absolute;
+  top: 38%;
+  left: 85%;
+  transform: translate(-50%, -50%);
+  width: 64px;
+}
+
+
+.Ad ul li:nth-child(2) img {
+  width: 95%;
+  height: auto;
+  margin: 0 auto;
+  margin-top: 15px;
+}
+
+.payment-btn {
+  width: 100%;
+  text-align: center;
+  margin: 0;
+  padding: 0;
+  font-size: 0;
+  line-height: 0;
+}
+
+.payment-btn img {
+  width: 95%;
+  display: block;
+  margin: 0 auto;
+}
+
+.app-footer {
+  margin-top: 0;
+}
+
+/* 가로 넘침 방지 */
+.checkout-info {
+  position: relative;
+  overflow: hidden;
+}
+
+.app-container {
+  overflow-x: hidden;
+}

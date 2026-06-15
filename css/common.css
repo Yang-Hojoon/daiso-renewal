@@ -1,0 +1,267 @@
+@charset "utf-8";
+
+@font-face {
+  font-family: "NotoSans";
+  src: url("../fonts/NotoSans-Medium.ttf") format("truetype");
+}
+
+/* ===== 기본 설정 ===== */
+body::-webkit-scrollbar { display: none; }
+
+body {
+  max-width: 420px;
+  margin: 0 auto;
+  font-family: "NotoSans", sans-serif;
+  background: #ffffff;
+  font-size: 8pt;
+  color: #2a2a2a;
+}
+
+button { cursor: pointer; }
+
+img {
+  width: 100%;
+  display: block;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+/* ===== 헤더 ===== */
+.header {
+  position: fixed;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 100%;
+  max-width: 420px;
+  background: #ffffff;
+  z-index: 100;
+  border-bottom: 1px solid #f7f7f7;
+  box-sizing: border-box;
+  padding-top: 62px;
+  padding-bottom: 10px;
+}
+
+/* 로고 + 버튼 줄 */
+.header-top {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 16px;
+  height: 40px;
+  position: relative;
+}
+
+.header-top .logo img {
+  height: 25px;
+  width: auto; /* ← width: 100% 예외처리 */
+}
+
+.mode-toggle {
+  position: absolute;
+  left: 48%;
+  transform: translateX(-42%);
+}
+
+.header-top button {
+  background: none;
+  border: none;
+  padding: 0;
+}
+
+.header-top button img {
+  width: auto;
+  height: 30px;
+}
+
+.header-bottom {
+  overflow: hidden;
+  max-height: 200px;
+  opacity: 1;
+  transition: max-height 0.3s ease, opacity 0.3s ease;
+}
+
+.header-bottom.hidden {
+  max-height: 0;
+  opacity: 0;
+}
+
+/* ===== 메인 ===== */
+main {
+  padding-top: 190px;
+  padding-bottom: 100px;
+}
+
+/* ===== 검색창 ===== */
+.search-section {
+  padding: 10px 16px;
+  background: #ffffff;
+}
+
+.search-box {
+  height: 39px;
+  display: flex;
+  align-items: center;
+  background: #ffffff;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  padding: 0 12px;
+}
+
+.search-input {
+  flex: 1;
+  border: none;
+  background: transparent;
+  font-size: 14px;
+  outline: none;
+}
+
+.search-input::placeholder {
+  font-size: 14px;
+  color: #2a2a2a;
+  text-align: center;
+}
+
+.camera-btn {
+  flex-shrink: 0;
+  background: none;
+  border: none;
+  padding: 0;
+  width: 24px;
+  height: 24px;
+}
+
+.camera-btn img {
+  width: 24px;
+  height: 24px;
+}
+
+/* ===== 카테고리 ===== */
+.home-category {
+  background: #ffffff;
+  padding: 5px 0;
+}
+
+.home-category ul {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+/* ===== 푸터 ===== */
+.app-footer {
+  background: #2a2a2a;
+  color: #ffffff;
+  padding: 30px 20px;
+  font-size: 13px;
+  margin-top: 70px;
+  margin-bottom: 80px;
+}
+
+.footer-logout {
+  text-align: center;
+  margin-bottom: 25px;
+  font-size: 14px;
+}
+
+.footer-logout a {
+  color: #ffffff;
+  text-decoration: none;
+}
+
+.footer-content {
+  display: grid;
+  grid-template-columns: 1fr 1px 1fr;
+  align-items: start;
+}
+
+.footer-divider {
+  background: rgba(255,255,255,0.3);
+  width: 1px;
+  height: 140px;
+  margin: 0 auto;
+}
+
+.footer-section {
+  text-align: center;
+  padding: 0 10px;
+}
+
+.footer-section h3 {
+  font-size: 14px;
+  margin-bottom: 8px;
+  font-weight: 600;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.footer-icon {
+  width: 14px;
+  display: inline-block;
+  vertical-align: middle;
+  margin-right: 4px;
+}
+
+.footer-section p {
+  font-size: 12px;
+  color: #cfcfcf;
+  margin-bottom: 12px;
+}
+
+.footer-section ul li {
+  margin-bottom: 6px;
+}
+
+.footer-section a {
+  color: #cfcfcf;
+  text-decoration: none;
+  font-size: 12px;
+}
+
+/* ===== 하단 네비 ===== */
+.bottom-nav {
+  position: fixed;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 100%;
+  max-width: 420px;
+  height: 80px;
+  background: #ffffff;
+  border-top: 1px solid #f7f7f7;
+  z-index: 1000;
+  padding-bottom: 3px;
+}
+
+.bottom-nav-list {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  height: 100%;
+  padding: 10px 0;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+.bottom-nav-list li {
+  flex: 1;
+  text-align: center;
+}
+
+.bottom-nav-list li a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+
+.bottom-nav-list img {
+  width: auto;
+  height: 100%;
+  margin-bottom: 20px;
+}

@@ -1,0 +1,57 @@
+@charset "utf-8";
+@font-face {
+  font-family: "NotoSans";
+  src: url("../fonts/NotoSans-Medium.ttf") format("truetype");
+}
+
+/* 뒤로가기 버튼 위치 */
+.back-btn {
+  position: absolute;
+  top: 28%;
+  left: 5%;
+}
+
+.back-icon {
+  width: 24px !important;
+  height: auto !important;
+}
+
+/* Notifications 텍스트 버튼 */
+.Shoppingcarttext {
+  position: absolute;
+  top: 32%;
+  left: 14%;
+  background: none;
+  border: none;
+  padding: 0;
+}
+
+.Shoppingcarttext img {
+  width: 80px !important;
+  height: auto !important;
+}
+
+/* 검색 버튼 */
+.search {
+  background: none;
+  border: none;
+  padding: 0;
+  cursor: pointer;
+}
+
+.search img {
+  width: 22px;
+  height: auto;
+}
+
+/* 알림 이미지 */
+.mypage {
+  margin-top: -20px;
+  display: flex;
+  justify-content: center;
+}
+
+.mypage img {
+  width: 93%;
+  display: block;
+}

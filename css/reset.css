@@ -1,0 +1,17 @@
+@charset "utf-8";
+
+html,body,div,span,object,iframe,h1,h2,h3,h4,h5,h6,p,
+blockquote,pre,abbr,address,cite,code,del,dfn,em,img,
+ins,kbd,q,samp,small,strong,sub,sup,var,b,i,dl,dt,dd,ol,ul,li,
+fieldset,form,label,legend,table,caption,tbody,tfoot,thead,tr,th,td,
+article,aside,canvas,details,figcaption,figure,footer,header,hgroup,
+menu,nav,section,summary,time,mark,audio,video{margin:0; padding:0;}
+
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {  display: block; }
+/*html5 새로 추가된 요소들은 블록요소로 인식되지 않음. 이 요소들은 대부분 블록요소일 경우가 대부분이기때문에 한꺼번에 선언함.*/
+
+li {list-style:none;}
+img,fieldset,iframe{border:0;}
+input { vertical-align:middle; }
+ .skip { font-size:0; width:0; height:0; line-height:0; position:absolute; left:-9999px; }
+.cf:after {content:"";display:block;clear:both;}
